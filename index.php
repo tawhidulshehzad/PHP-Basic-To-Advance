@@ -24,10 +24,17 @@
 
 <body>
   <?php
-  $name = "Dark Matter"
-    ?>
+  $name = "Dark Matter";
+  $isRead = false;
+  if ($isRead) {
+    $message = "You have read {$name}";
+  } else {
+    $message = "You have not read {$name}";
+  }
+  ?>
   <h1>
-    You have read <?php echo $name; ?>
+    <!-- <?php echo $message; ?> -->
+    <?= $message ?>
   </h1>
 </body>
 
