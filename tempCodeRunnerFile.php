@@ -1,4 +1,6 @@
 <?php
-// echo "\n";
-// echo "New line";
-// echo PHP_EOL;
+if ( isEven( $x ) ) {
+//     echo "{$x} is an even number";
+// } else {
+//     echo "{$x} is an odd number";
+// }
