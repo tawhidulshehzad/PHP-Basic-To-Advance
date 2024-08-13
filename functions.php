@@ -13,3 +13,7 @@ echo "\n" . '==========' . "\n" . PHP_EOL;
 
 $x = 4;
 echo "factorial of {$x} is " . factorial( $x );
+
+echo "\n" . '==========' . "\n" . PHP_EOL;
+
+echo sum(5,5);

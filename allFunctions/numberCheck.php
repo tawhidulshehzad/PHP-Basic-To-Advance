@@ -17,3 +17,7 @@ function factorial( int $n ) {
     }
     return $result;
 }
+
+function sum( int $x, int $y ): int {
+    return $x + $y;
+}
