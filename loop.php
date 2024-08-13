@@ -38,3 +38,11 @@ for ( $i = 0; $i < 8; $i++ ) {
     }
     echo $i . PHP_EOL;
 }
+
+echo "\n" . '==========' . "\n" . PHP_EOL;
+for ( $i = 0; $i < 10; $i++ ) {
+    if ( $i < 5 ) {
+        continue;
+    }
+    echo $i . PHP_EOL;
+}
