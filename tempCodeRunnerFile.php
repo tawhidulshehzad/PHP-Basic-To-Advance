@@ -1,25 +1,5 @@
 <?php
-$students = [
-//     '12' => 'hasan',
-//     '13' => 'karin',
-//     '14' => 'jalal',
-// ];
+$studentWe = $json_decode( $jsonFirst, true );
+// //we use true to get an array, without true we will get an object;
 
-// $food = [
-//     'vegitable' => 'hasan,brinjal, brocoli, carrot, capsicam',
-//     'fruit'     => 'orange, banana, apple,',
-//     'drink'     => 'water, milk',
-// ];
-// $food['drink'] = $food['drink'] . ", orange juice";
-
-// echo $food['drink'];
-
-// foreach ( $food as $key => $value ) {
-//     echo $key . " = " . $value . "\n";
-// }
-// echo "======== \n";
-
-// $keys = array_keys( $food );
-// print_r( $keys );
-// echo "======== \n";
-// echo $keys[0];
+// print_r( $studentWe );
