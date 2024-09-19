@@ -1,2 +1,4 @@
 <?php
-\n a is found
+function cube( $n ) {
+//     return $n * $n * $n;
+// }
