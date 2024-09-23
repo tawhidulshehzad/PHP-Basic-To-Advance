@@ -1,4 +1,3 @@
 <?php
-function cube( $n ) {
-//     return $n * $n * $n;
-// }
+shuffle( $fruits );
+print_r($fruits);

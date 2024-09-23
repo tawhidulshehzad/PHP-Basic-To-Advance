@@ -20,4 +20,13 @@ foreach ( range( 10, 20, 2 ) as $evenNumber ) {
 // pick a random number
 $random = mt_rand( 0, 32 );
 shuffle( $numberRange );
-print_r( $numberRange );
+// print_r( $numberRange );
+
+$fruits = array( 'a' => 'apple', 'b' => 'banana', 'c' => 'plum', 'd' => 'dates' );
+
+shuffle( $fruits );
+print_r($fruits);
+
+$key = array_rand( $fruits );
+// print_r( $key );
+// echo $fruits[$key];
