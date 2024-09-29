@@ -24,4 +24,15 @@ $length = strlen( $string );
 // echo $length;
 // echo substr( $string, $length -3);
 
-echo substr( $string, -3);
+// echo substr( $string, -3);
+
+for ( $i = $length - 1; $i >= 0; $i-- ) {
+    // echo $string[$i];
+}
+// echo strrev($string);
+
+$parts = explode(" ", $string);
+// print_r($parts);
+
+$original = join(" ", $parts);
+echo $original;
