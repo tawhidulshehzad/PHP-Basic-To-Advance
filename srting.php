@@ -11,3 +11,5 @@ data2 {$name}
 data3
 EOD;
 echo $heredoc;
+echo "\n";
+echo ord('A');
