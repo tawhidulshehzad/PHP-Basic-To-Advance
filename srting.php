@@ -58,11 +58,19 @@ $str = 'str ing';
 $chars = preg_split( '//', $str, -1, PREG_SPLIT_NO_EMPTY );
 // print_r($chars);
 
-$str = "ami valo";
+$str = "John|Doe,,Jane,Smith";
 
-// foreach ( count_chars( $str, 1 ) as $strr => $value ) {
-//     echo chr( $strr ) . " occurred  $value times in the string. \n";
-// }
+foreach ( count_chars( $str, 1 ) as $strr => $value ) {
+    // echo chr( $strr ) . " occurred  $value times in the string. \n";
+}
 
-$str = "Hello World!";
-echo count_chars($str,mode: 3);
+// $str = "Hello World!";
+// echo count_chars($str,mode: 3);
+
+$part03 = strtok( $str, " ," );
+while ( $part03 != false ) {
+    // echo $part03 . "\n";
+    $part03 = strtok( " ," );
+}
+$string_preg = preg_split( '/([|,]+)/', $str, -1, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE );
+print_r( $string_preg );
