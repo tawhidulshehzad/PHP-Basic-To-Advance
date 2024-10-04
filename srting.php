@@ -73,4 +73,17 @@ while ( $part03 != false ) {
     $part03 = strtok( " ," );
 }
 $string_preg = preg_split( '/([|,]+)/', $str, -1, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE );
-print_r( $string_preg );
+// print_r( $string_preg );
+
+// STring search
+
+$StrSch = "Quick brown fox jumps over the lazy dog";
+// $offset= stripos($StrSch, "fox", 13);
+$offset = stripos( $StrSch, "Quick" );
+// strrpos use for count from last
+
+if ( $offset !== false ) {
+    echo "\n We found the word";
+} else {
+    echo "\n Word was not found";
+}
