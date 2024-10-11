@@ -1,6 +1,6 @@
 <?php
 
-$str1 = 'hello world. i aM fine';
+$str1 = '  hello';
 // $str2 = 'bangladesh';
 $str1 = strtolower( $str1 );
 
@@ -35,4 +35,14 @@ for ( $i = 0; $i < count( $str2 ); $i++ ) {
 
 }
 $fixed = join( ". ", $str2 );
-echo $fixed;
+// echo $fixed;
+
+$str1 = rtrim( $str1 );
+// echo $str1;
+
+$newStr = "abdul  karim is gooda boy. he  can run..so fast";
+
+$fixedNamde = str_replace( ["  ", ".."], [" ", " "], $newStr );
+// echo $fixedNamde;
+
+echo substr( $newStr, 5, 10 );
