@@ -27,3 +27,4 @@ function passwordGenerator( $lowerCase, $upperCase, $symbols, $numbers, $limit )
 $getThePassword = passwordGenerator( true, true, true, true, 10 );
 
 echo $getThePassword;
+
