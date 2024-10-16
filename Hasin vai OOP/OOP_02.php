@@ -19,7 +19,7 @@ class Human {
             echo "This is {$this->name}, I am {$this->age} years old \n";
         } else {
             echo "This is {$this->name}";
-            echo "tiral";
+            
         }
     }
 }
