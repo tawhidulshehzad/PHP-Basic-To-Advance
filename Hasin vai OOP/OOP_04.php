@@ -9,7 +9,12 @@ class RGB {
     private $blue;
     function __construct( $coloCode = '' ) {
         $this->color = ltrim( $coloCode, '#' );
-        $this->parseColor();
+        $codeLength = strlen( $this->color );
+        if ( $codeLength < 6 ) {
+            $this->parseColor();
+        } else {
+            echo "Error";
+        }
     }
 
     private function parseColor() {
@@ -21,4 +26,4 @@ class RGB {
     }
 }
 
-$myColor = new RGB( "#ffef27" );
+$myColor = new RGB( "#ffec" );
